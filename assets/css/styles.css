@@ -505,7 +505,7 @@ img {
 }
 
 .home__blob-img {
-    width: 170px;
+    width: 250px;
 }
 
 .home__data {
@@ -924,6 +924,42 @@ img {
 .active-modal {
     opacity: 1;
     visibility: visible;
+}
+
+.projects {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.projects__container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 2rem 0;
+}
+
+.project__card {
+    background-color: rgb(229, 224, 255);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project__card:hover {
+    transform: scale(1.05);
+}
+
+.project__img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.project__title {
+    font-size: 1.2rem;
+    color: #333;
 }
 
 /*==================== PORTFOLIO ====================*/
